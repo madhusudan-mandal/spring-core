@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- bean class="com.spring.core.practice.autowiringXML.Employee" name="employee1" p:id="1001" p:name="Employee1" autowire="byType" /> -->
+	<bean class="com.spring.core.practice.autowiringXML.Employee" name="employee2" p:id="1003" p:name="Employee2" autowire="constructor"/>
+	<bean class="com.spring.core.practice.autowiringXML.Address" name="address" p:street="1/112" p:city="Ghaziabad"/>
+	<!--  <bean class="com.spring.core.practice.autowiringXML.Address" name="address2" p:street="2/112" p:city="Ghaziabad"/>
+	<bean class="com.spring.core.practice.autowiringXML.Employee" name="employee2" p:id="1002" p:name="Employee2" autowire="byName"/>
+	<bean class="com.spring.core.practice.autowiringXML.Address" name="address3" p:street="3/112" p:city="Ghaziabad"/-->
+</beans>
